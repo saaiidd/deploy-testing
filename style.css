@@ -1,0 +1,194 @@
+/* Custom Variables */
+:root {
+    --scroll-container-clr: #000;
+    --scroll-container-txt: #fff;
+    --primary-black: #212121;
+    --desc-clr: #404040;
+    --top-bg-gray-clr: #333;
+    --button-txt-clr: #121212;
+}
+
+
+/* self-hosting fonts */
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('Fonts/NeueMachina-Light.woff') format('woff');
+    font-weight: 300;
+    /* Light */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('Fonts/NeueMachina-Regular.woff') format('woff');
+    font-weight: 400;
+    /* Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('Fonts/NeueMachina-Ultrabold.woff') format('woff');
+    font-weight: 800;
+    /* Ultrabold */
+    font-style: normal;
+}
+
+
+
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: ;
+    line-height: 1.7;
+    font-family: "Neue Machina";
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+/* General CSS Styles */
+
+
+
+.centering-details {
+    min-height: 23svh;
+    display: grid;
+    place-content: center;
+}
+
+
+.name-details {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1.7em;
+    align-items: center;
+    column-gap: 1.5rem;
+    width: 26.25em;
+
+}
+
+
+.name-expertise {
+    margin-inline: auto;
+}
+
+.name-expertise h1 {
+    font-size: 40px;
+    line-height: 1.3;
+}
+
+.name-expertise p {
+    font-weight: 300;
+    font-family: "Poppins", system-ui;
+    color: var(--desc-clr) !important;
+    font-size: .875rem;
+    font-weight: 400;
+}
+
+
+
+
+.tel-marker-btn-wrapper {
+    display: flex;
+    gap: .60rem;
+    padding-inline: 1em;
+    justify-content: center;
+    text-align: center;
+    margin-top: 46px;
+    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+}
+
+
+.tel-marker-btn-wrapper a {
+    flex-grow: 1;
+    max-width: 200px;
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+    font-family: "Poppins", system-ui;
+    white-space: nowrap;
+
+}
+
+.telephone {
+    background-color: #333333;
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 0.81rem;
+}
+
+.marker {
+    color: var(--button-txt-clr);
+    font-size: .81rem;
+    padding: 8px 12px;
+    border: 1px solid #000;
+}
+
+
+.img-right img {
+    max-width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    aspect-ratio: 1 / 1;
+}
+
+.social-media-container {
+    margin-left: 30px;
+    max-width: 500px;
+    margin-inline: auto;
+}
+
+.social-media-container h2 {
+    transform: translateY;
+    transform: translateY(7px);
+    margin-left: 27px;
+}
+
+.social-media-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: calc(2em - 1rem);
+
+}
+
+
+.social-media-wrapper>* {
+    display: grid;
+    align-items: center;
+    grid-template-columns: fit-content(100%) fit-content(100%);
+    align-items: center;
+    border: 1px solid #000;
+    padding: 10px;
+    color: #000;
+    column-gap: 10px;
+    width: 100%;
+    font-family: "Poppins", system-ui;
+}
